@@ -8,4 +8,10 @@
       command: mvn clean compile
     - name: Run the maven install
       command: mvn clean package
-    
+    - name: Docker build
+      docker_image:
+        name: formycore:nov18
+        path: .
+        source: build
+        state: present
+        
