@@ -4,5 +4,8 @@
   connection: local
   become: yes
   tasks:
-    - name : Run the maven code
+    - name : Run the maven compile
       command: mvn clean compile
+    - name: Run the maven install
+      command: mvn clean package
+    
