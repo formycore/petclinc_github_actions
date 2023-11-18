@@ -11,7 +11,7 @@
     - name: Docker build
       docker_image:
         name: formycore:nov18
-        path: .
+        build:
+          path: .
         source: build
         state: present
-        
