@@ -2,7 +2,6 @@
 - name: Running the maven code
   hosts: localhost
   connection: local
-  become: yes
   tasks:
     - name : Run the maven compile
       command: mvn clean compile
