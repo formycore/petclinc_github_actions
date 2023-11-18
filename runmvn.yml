@@ -9,7 +9,7 @@
       command: mvn clean package
     - name: Docker build
       docker_image:
-        name: formycore:nov18
+        name: formycore/test:nov18
         build:
           path: .
         source: build
